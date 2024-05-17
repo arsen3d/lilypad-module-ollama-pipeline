@@ -1,6 +1,7 @@
 # Ollama Pipeline for Lilypad and Docker 🐋
 Based on Ollama, the Ollama Pipeline modules for Lilypad allow you generate text on Lilypad using various models.
-
+docker build -t arsen3d/ollama:llama3-8b-lilypad1 -f Dockerfile-llama3-8b https://github.com/arsen3d/lilypad-module-ollama-pipeline.git#test
+docker push arsen3d/ollama:llama3-8b-lilypad1
 [WORK IN PROGRESS, HERE BE DRAGONS]
 
 # Usage
