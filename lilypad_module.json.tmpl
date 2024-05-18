@@ -14,7 +14,12 @@
             "Deal": {
                 "Concurrency": 1
             },
-            "Docker": {},
+            "Docker": {
+            "EnvironmentVariables": [
+                    {{ if .Prompt }}"{{ subst "PROMPT=%s" .Prompt }}"{{ end }}
+                ],
+                "Image": "zorlin/ollama:llama3-8b-lilypad1",
+            },
             "EngineSpec": {
                 "Params": {
                 "Entrypoint": null,
