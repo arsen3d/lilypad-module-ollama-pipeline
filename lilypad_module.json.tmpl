@@ -13,7 +13,7 @@
       "Docker": {
         "EnvironmentVariables": [
           {{ if .ipfs }}"{{ subst "ipfs=%s" .ipfs }}",{{else}}"IMAGE=ipfs",{{ end }}
-          {{ if .prompt }}"{{ subst "prompt=%s" .prompt }}"{{else}}"prompt=prompt"{{ end }}
+          {{ if .prompt }}"{{ subst "PROMPT=%s" .prompt }}"{{else}}"prompt=prompt"{{ end }}
         ],
         "Image": "arsen3d/ollama:llama3-8b-lilypad1"
       },
